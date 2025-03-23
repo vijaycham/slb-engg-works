@@ -2,15 +2,15 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import About from "./sections/About";
 import Contact from "./sections/Contact";
-import Hero from "./sections/Hero";
+import Home from "./sections/Home";
 import Machines from "./sections/Machines";
 import Services from "./sections/Services";
 
-const Home = () => {
+const Page = () => {
   return (
     <>
       <Header />
-      <Hero />
+      <Home />
       <About />
       <Services />
       <Machines />
@@ -19,4 +19,4 @@ const Home = () => {
     </>
   );
 };
-export default Home;
+export default Page;

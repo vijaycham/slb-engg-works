@@ -1,9 +1,11 @@
-import Header from "@/app/components/Header";
+import "./globals.css";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="bg-gray-100 text-gray-900 font-sans">
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
