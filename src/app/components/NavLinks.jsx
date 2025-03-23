@@ -1,7 +1,14 @@
 import { Link } from "react-scroll";
 
-const navItems = ["home", "about", "services", "machines", "contact"];
-const NavLinks = ({ onClick }) => { 
+const navItems = [
+  "home",
+  "about",
+  "services",
+  "machines",
+  "clients",
+  "contact",
+];
+const NavLinks = ({ onClick }) => {
   return (
     <nav className="flex justify-center gap-6">
       {navItems.map((section) => {
@@ -10,7 +17,7 @@ const NavLinks = ({ onClick }) => {
             key={section}
             to={section}
             smooth={true}
-            duration={500}
+            duration={300}
             className="cursor-pointer text-gray-700 hover:text-blue-600 transition"
             onClick={onClick}
           >
@@ -21,6 +28,5 @@ const NavLinks = ({ onClick }) => {
       })}
     </nav>
   );
-
 };
 export default NavLinks;

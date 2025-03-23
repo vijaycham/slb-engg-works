@@ -5,6 +5,7 @@ import Contact from "./sections/Contact";
 import Home from "./sections/Home";
 import Machines from "./sections/Machines";
 import Services from "./sections/Services";
+import Clients from "./sections/Clients";
 
 const Page = () => {
   return (
@@ -14,6 +15,7 @@ const Page = () => {
       <About />
       <Services />
       <Machines />
+      <Clients />
       <Contact />
       <Footer />
     </>
